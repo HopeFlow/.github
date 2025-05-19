@@ -1,0 +1,41 @@
+name: Bug Report
+description: Report a bug to help us improve
+title: "[BUG] <title>"
+type: Bug
+labels: ["bug"]
+body:
+  - type: input
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: e.g., Clicking the submit button causes a crash
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to trigger the bug
+      placeholder: |-
+        1. Go to the login page
+        2. Enter invalid credentials
+        3. Click 'Login'
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: e.g., An error message should appear
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happens? add any screenshots here
+      placeholder: e.g., The application crashes
+    validations:
+      required: true

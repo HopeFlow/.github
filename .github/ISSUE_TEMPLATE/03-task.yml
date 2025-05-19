@@ -1,0 +1,51 @@
+name: Task
+description: Define a specific task to complete
+title: "[TASK] <title>"
+type: Task
+labels: ["task"]
+body:
+  - type: textarea
+    id: task_description
+    attributes:
+      label: Task Description
+      description: A clear and concise description of the task
+      placeholder: e.g., Implement user profile page UI according to https://www.figma.com/file/...
+    validations:
+      required: true
+  - type: dropdown
+    id: effort_estimate
+    attributes:
+      label: Effort Estimate
+      description: Estimate the time to complete the task in team defined 'point' unit
+      options:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 8
+        - 13
+        - 21
+        - 34
+        - 55
+        - 89
+      default: 2
+    validations:
+      required: false
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any related issues or external factors (e.g., '#124', 'API v2 release')
+      placeholder: |-
+        - #124
+        - API v2 release
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional context or technical considerations
+      placeholder: e.g., Use React for UI components
+    validations:
+      required: false
