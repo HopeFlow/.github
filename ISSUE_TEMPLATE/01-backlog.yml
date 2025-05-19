@@ -1,0 +1,48 @@
+name: Backlog Item
+description: Create a new backlog item conforming to user story definition
+labels:
+  - backlog
+body:
+  - type: input
+    id: persona
+    attributes:
+      label: Persona
+      description: 'Who is the user or stakeholder? (e.g., ''logged-in user'', ''admin'')'
+      placeholder: 'e.g., logged-in user'
+    validations:
+      required: true
+  - type: input
+    id: action
+    attributes:
+      label: Action
+      description: 'What does the user want to do? (e.g., ''view my profile'')'
+      placeholder: 'e.g., view my profile'
+    validations:
+      required: true
+  - type: input
+    id: intent
+    attributes:
+      label: Intent
+      description: 'Why does the user want to do this? (e.g., ''to check my account details'')'
+      placeholder: 'e.g., to check my account details'
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: 'List the conditions that define ''done'' (e.g., ''- [ ] Profile page loads in <2s'')'
+      placeholder: |-
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+  - type: textarea
+    id: appendixes
+    attributes:
+      label: Appendices
+      description: Any appendix to clarify previous statements
+      placeholder: |-
+        #### Appendix A: Description concept A referenced in intent section
+    validations:
+      required: false
