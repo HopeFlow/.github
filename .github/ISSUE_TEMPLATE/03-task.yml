@@ -1,6 +1,6 @@
 name: Task
 description: Define a specific task to complete
-title: "[TASK] <title>"
+title: "[TASK] "
 type: Task
 labels: ["task"]
 body:
