@@ -1,6 +1,6 @@
 name: Backlog Item
 description: Create a new backlog item conforming to user story definition
-title: "[BACKLOG] <title>"
+title: "[BACKLOG] "
 type: Feature
 labels:
   - backlog
